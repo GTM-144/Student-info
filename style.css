@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: rgb(17,17,17);
+    padding: 25px;
+    color: #ffff;
+}
+
+.container{
+    display: flex;
+    flex-flow: column wrap;
+    gap:1rem;
+}
+
+
+.container .upper{
+    display: flex;
+    flex-flow: column wrap;
+    gap: 2rem;
+}
+
+
+.container .upper form{
+    display: flex;
+    flex-flow: column wrap;
+    gap: 1em;
+}
+
+.container .upper form button,#editbut{
+width: 40%;
+height:2rem;
+cursor: pointer;
+}
+.container .upper form .inputtags{
+    display: flex;
+    flex-flow: row wrap;
+    gap:1rem;
+}
+
+.container .upper .inputtags input{
+     height:2rem;
+     width:25rem;
+     background-color: black;
+     border: 1px solid rgb(194, 189, 189);
+     border-radius: 2px;
+     color: white;
+     padding-left: 7px;
+     
+}
+
+.container .upper{
+    padding-bottom: 50px;
+}
+
+.container .middle input{
+height: 2rem;
+width:90%;
+padding: 15px;
+}
+
+.container .middle input:focus{
+    border: none;
+    outline: none;
+    }
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 10px;
+}
+head{
+border: 1px solid rgb(92, 88, 88)e;
+border-radius: 10px;
+}
+tbody{
+    border: 1px solid rgb(92, 88, 88);
+    border-radius: 10px;
+    
+}
+tr{
+    border-radius: 10px;
+}
+th{
+padding: 7px 50px;
+border: 2px solid rgb(92, 88, 88);
+text-align: start;
+}
+td{
+padding:7px 50px;
+border-right: 1px solid rgb(92, 88, 88);
+/* border-bottom: 1px solid rgb(92, 88, 88); */
+text-align: start;
+font-size: 12px;
+}
+
+tbody  #td{
+    display: flex;
+    justify-content: space-between;
+    /* width:5px ;
+    height: 5px; */
+}
+tbody  #td .imgs{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+}
+
+tbody  #td .imgs img{
+    width: 15px;
+    height: 15px;
+    align-items: baseline;
+    
+}
+
+tbody  #td .imgs img:hover{
+    cursor: pointer;
+}

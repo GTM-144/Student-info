@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <title>Student Data</title>
+</head>
+<body>
+    <div class="container">
+       <div class="upper">
+            <h2>Student Management CRUD</h2>
+            <form action="##" method="post" id="form">
+                <div class="inputtags">
+                    <input type="text" name="Name" id="Name" placeholder="Name" required>
+                    <input type="email" name="Email" id="Email" placeholder="Email" required>
+                    <input type="text" name="GPA" id="GPA" placeholder="GPA" required>
+                    <br>
+                    <input type="number" name="Age" id="Age" placeholder="Age" required>
+                    <input type="text" name="Degree" id="Degree" placeholder="Degree" required>
+                
+                </div>
+                <button id="submit">Add Student</button>
+            </form>
+        
+       </div>
+
+       <div class="middle">
+            <input type="text" name="searchbyname" id="searchbyname" placeholder="Search By Name, email or degree">
+       </div>
+
+       <div class="bottom">
+        <table>
+            <head>
+                <tr>
+                    <th>ID</th>
+                    <th>Student Name</th>
+                    <th>Email</th>
+                    <th>Age</th>
+                    <th>GPA</th>
+                    <th>Degree</th>
+                </tr>
+            </head>
+            <tbody id="tbody">
+                <!-- <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td id="td">
+                        <div class="imgs">
+                            <img src="./asserts/edit.png"  id="editing" alt="edit">
+                            <img id="deleteing"  src= "./asserts/delete.png" alt="delete">
+                        </div>
+                    </td>     
+                </tr> -->
+
+                
+            </tbody>
+        </table>
+       </div>
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
